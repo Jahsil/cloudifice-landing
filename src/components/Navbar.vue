@@ -57,6 +57,7 @@
       <!-- Desktop CTA Buttons -->
       <div class="hidden md:flex items-center space-x-4">
         <button
+          @click="routeToLoginPage"
           :class="
             scrolled
               ? 'text-gray-700 hover:text-indigo-600'
@@ -66,7 +67,9 @@
         >
           Login
         </button>
-        <button class="cta-button">Get Started</button>
+        <button @click="routeToSignupPage" class="cta-button">
+          Get Started
+        </button>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -184,6 +187,13 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll);
 });
+
+function routeToLoginPage() {
+  window.open('https://cloudifice.eyouel-kibret.dev.et/login', '_blank');
+}
+function routeToSignupPage() {
+  window.open('https://cloudifice.eyouel-kibret.dev.et/signup', '_blank');
+}
 </script>
 
 <style scoped>

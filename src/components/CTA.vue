@@ -7,19 +7,19 @@
       <div
         class="absolute inset-0 bg-[url('@/assets/images/grid.jpg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"
       ></div>
-      <div
-        v-for="i in 15"
+      <!-- <div
+        v-for="i in 8"
         :key="i"
         class="absolute rounded-full bg-white opacity-10"
         :style="{
-          width: `${Math.random() * 100 + 50}px`,
-          height: `${Math.random() * 100 + 50}px`,
+          width: `${Math.random() * 100}px`,
+          height: `${Math.random() * 100}px`,
           top: `${Math.random() * 100}%`,
           left: `${Math.random() * 100}%`,
           animation: `float ${Math.random() * 15 + 10}s linear infinite`,
           animationDelay: `${Math.random() * 5}s`,
         }"
-      ></div>
+      ></div> -->
     </div>
 
     <div class="container mx-auto px-6 relative z-10">
